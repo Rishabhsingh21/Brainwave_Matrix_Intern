@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#task-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f1f8e9; 
+}
+
+#add-task-button {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: #007bff; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#add-task-button:hover {
+    background: #0056b3; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    background: #f9fbe7; 
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+li.added {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    background: #e0e0e0; 
+}
+
+button.delete-btn {
+    background: #dc3545; 
+    color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.3s;
+}
+
+button.delete-btn:hover {
+    background: #c82333; 
+}
+
+button.edit-btn {
+    background: #ffc107; 
+    color: black;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    transition: background 0.3s;
+}
+
+button.edit-btn:hover {
+    background: #e0a800; 
+}
+
+.edit-mode {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.edit-mode input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
